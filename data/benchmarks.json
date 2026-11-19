@@ -1,0 +1,172 @@
+{
+    "out_of_the_box_benchmarks": [
+        {
+            "id": "qxcv/tensor-trust",
+            "name": "Tensor Trust - Extraction Robustness",
+            "description": "Attacker prompts that try to trick a defended chatbot into revealing a hidden access code or system prompt. Use the results to see how well each detector catches prompt-extraction and system-prompt-leak attempts.",
+            "source": {
+                "type": "hf-file",
+                "repo": "qxcv/tensor-trust",
+                "path": "benchmarks/extraction-robustness/v1/extraction_robustness_dataset.jsonl",
+                "format": "jsonl",
+                "promptField": "attack"
+            }
+        },
+        {
+            "id": "walledai/CyberSecEval",
+            "name": "WalledAI CyberSecEval - C Autocomplete",
+            "description": "Code-completion prompts from Meta's CyberSecEval suite that can lead an LLM coding assistant to autocomplete insecure or vulnerable C code. Use the results to gauge Malicious Code Detection coverage for coding-assistant use cases.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "walledai/CyberSecEval",
+                "config": "autocomplete",
+                "split": "c",
+                "promptField": "prompt"
+            }
+        },
+        {
+            "id": "rubend18/ChatGPT-Jailbreak-Prompts",
+            "name": "ChatGPT Jailbreak Prompts",
+            "description": "A large collection of publicly circulated ChatGPT jailbreak prompts (DAN-style and similar) crafted to bypass safety guardrails. Use the results to measure jailbreak/prompt-injection detection against well-known, widely copy-pasted jailbreak techniques.",
+            "source": {
+                "type": "hf-file",
+                "repo": "rubend18/ChatGPT-Jailbreak-Prompts",
+                "path": "dataset.csv",
+                "format": "csv",
+                "promptField": "Prompt"
+            }
+        },
+        {
+            "id": "S-Labs/prompt-injection-dataset",
+            "name": "S-Labs Prompt Injection Dataset (benign vs injection)",
+            "description": "A labeled mix of benign requests and prompt-injection attempts. Because benign prompts are included, use the results to check both detection rate on real injections and the false-positive rate on normal, harmless text.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "S-Labs/prompt-injection-dataset",
+                "config": "default",
+                "split": "test",
+                "promptField": "text"
+            }
+        },
+        {
+            "id": "cgoosen/prompt_injection_password_or_secret",
+            "name": "Password/Secret Extraction Prompt Injections",
+            "description": "Prompt-injection attempts specifically crafted to get a model to reveal passwords, API keys, or other secrets from its context. Use the results to assess sensitive-data and secret-exfiltration detection in particular, not just generic injection detection.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "cgoosen/prompt_injection_password_or_secret",
+                "config": "default",
+                "split": "train",
+                "promptField": "text"
+            }
+        },
+        {
+            "id": "Dhanjo/ai-agent-security-dataset",
+            "name": "AI Agent Security Attack Prompts (baseline)",
+            "description": "Attack prompts targeting autonomous AI agents, such as tool misuse and goal hijacking, from a baseline (undefended) attack-results split. Use the results to evaluate AI Agent Protection detection for agentic deployments specifically.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "Dhanjo/ai-agent-security-dataset",
+                "config": "attack_results",
+                "split": "baseline",
+                "promptField": "attack_prompt"
+            }
+        },
+        {
+            "id": "rishitchugh/successful_adversarial_prompts#gcg",
+            "name": "Successful Adversarial Prompts - GCG suffix",
+            "description": "Adversarial suffixes produced by the GCG automated jailbreak-search algorithm, empirically shown to bypass aligned models. Use the results to check detection against algorithmically-optimized attacks, a harder class than hand-written jailbreaks.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "rishitchugh/successful_adversarial_prompts",
+                "config": "default",
+                "split": "train",
+                "promptField": "GCG Adv"
+            }
+        },
+        {
+            "id": "rishitchugh/successful_adversarial_prompts#pez",
+            "name": "Successful Adversarial Prompts - PEZ suffix",
+            "description": "Adversarial suffixes produced by the PEZ automated jailbreak-search algorithm, empirically shown to bypass aligned models. Use the results to check detection against algorithmically-optimized attacks, a harder class than hand-written jailbreaks.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "rishitchugh/successful_adversarial_prompts",
+                "config": "default",
+                "split": "train",
+                "promptField": "Pez Adv"
+            }
+        },
+        {
+            "id": "rishitchugh/successful_adversarial_prompts#gbda",
+            "name": "Successful Adversarial Prompts - GBDA suffix",
+            "description": "Adversarial suffixes produced by the GBDA automated jailbreak-search algorithm, empirically shown to bypass aligned models. Use the results to check detection against algorithmically-optimized attacks, a harder class than hand-written jailbreaks.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "rishitchugh/successful_adversarial_prompts",
+                "config": "default",
+                "split": "train",
+                "promptField": "GBDA Adv"
+            }
+        },
+        {
+            "id": "harpreetsahota/adversarial-prompts",
+            "name": "Adversarial Red-Teaming Prompts",
+            "description": "A broad set of hand-crafted adversarial and red-teaming prompts spanning jailbreaks, role-play bypasses, and harmful-content elicitation. Use the results as a general-purpose red-teaming detection baseline across multiple attack styles.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "harpreetsahota/adversarial-prompts",
+                "config": "default",
+                "split": "train",
+                "promptField": "Prompt"
+            }
+        },
+        {
+            "id": "Lakera/b3-agent-security-benchmark-weak",
+            "name": "Lakera B3 Agent Security Benchmark (weak)",
+            "description": "Lakera's B3 benchmark of attacks against weakly-defended AI agents, covering tool abuse and unauthorized actions. Use the results to evaluate agent-focused detection on the same attack style Lakera uses for its own guardrail benchmarking.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "Lakera/b3-agent-security-benchmark-weak",
+                "config": "default",
+                "split": "test",
+                "promptField": "attack"
+            }
+        },
+        {
+            "id": "itsVentie/llm-red-teaming-corpus",
+            "name": "LLM Red-Teaming Corpus",
+            "description": "A general-purpose LLM red-teaming prompt corpus spanning multiple attack styles and categories. Use the results as a broad coverage check that complements the more specialized datasets above.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "itsVentie/llm-red-teaming-corpus",
+                "config": "default",
+                "split": "train",
+                "promptField": "prompt"
+            }
+        },
+        {
+            "id": "ai-safety-institute/AgentHarm",
+            "name": "AgentHarm - Harmful Agent Tasks",
+            "description": "Multi-step, tool-using agent tasks explicitly designed to be harmful (fraud, cybercrime, disinformation, harassment), from the UK AI Safety Institute and Gray Swan AI. Use the results to evaluate AI Agent Protection detection against concrete, actionable harmful tasks rather than simple jailbreak text.",
+            "source": {
+                "type": "hf-rows",
+                "repo": "ai-safety-institute/AgentHarm",
+                "config": "harmful",
+                "split": "test_public",
+                "promptField": "prompt"
+            }
+        },
+        {
+            "id": "thu-coai/Agent-SafetyBench",
+            "name": "Agent-SafetyBench - Unsafe Agent Instructions",
+            "description": "2,000 unsafe tool-using-agent instructions evenly spanning eight risk categories: sensitive-data leakage, harmful code, physical harm, misinformation, legal/ethical violations, property loss, availability compromise, and unsafe information. Use the results as a broad, category-balanced check of AI Agent Protection and Sensitive Data Detection.",
+            "source": {
+                "type": "hf-file",
+                "repo": "thu-coai/Agent-SafetyBench",
+                "path": "released_data.json",
+                "format": "json",
+                "promptField": "instruction"
+            }
+        }
+    ]
+}

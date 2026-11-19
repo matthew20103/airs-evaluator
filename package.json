@@ -1,0 +1,29 @@
+{
+  "name": "airs-evaluator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "start": "node --experimental-sqlite server/index.js",
+    "build": "npm run build --workspace frontend",
+    "test": "NODE_OPTIONS=--experimental-sqlite vitest run"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mammoth": "^1.13.0",
+    "multer": "^2.5.0",
+    "openai": "^4.68.0",
+    "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^5.1.0"
+  }
+}

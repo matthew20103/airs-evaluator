@@ -1,0 +1,10 @@
+project_id = "your-gcp-project-id"
+
+# All other variables have defaults (see variables.tf) - override here if needed.
+# region            = "us-central1"
+# zone              = "us-central1-a"
+# instance_name     = "airs-evaluator-server"
+# machine_type      = "e2-standard-4"
+# boot_disk_size_gb = 30
+# ssh_user          = "ubuntu"
+# app_port          = 8000

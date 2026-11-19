@@ -1,0 +1,131 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fafaf9;
+  color: #1c1b1a;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e4e2dd;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #6f6e69;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs button.active {
+  color: #1c1b1a;
+  border-bottom-color: #c75146;
+  font-weight: 600;
+}
+
+.card {
+  border: 1px solid #e4e2dd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: white;
+}
+
+input[type='text'],
+input[type='password'],
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #d8d6d1;
+  border-radius: 4px;
+  font: inherit;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+button.primary {
+  background: #c75146;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+}
+
+button.primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+th.num,
+td.num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.progress {
+  background: #f1f0ec;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-fill {
+  background: #c75146;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.muted {
+  color: #6f6e69;
+  font-size: 13px;
+}
+
+.error {
+  color: #9b2b22;
+  font-size: 13px;
+}
+
+.success {
+  color: #1e7b34;
+  font-size: 13px;
+}

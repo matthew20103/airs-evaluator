@@ -57,7 +57,10 @@ By the end, each student should be able to:
 | 5 | Guided vibe-coding challenges *(optional / full-day)* | Incremental change under tests | Small feature / fix with AI | 60–90 min |
 | C | Capstone debrief | Critique & communication | Short write-up or lightning talk | 20–30 min |
 
-Full student instructions live in [`LAB_GUIDE.md`](./LAB_GUIDE.md). Challenge cards for Module 5 are in [`CHALLENGES.md`](./CHALLENGES.md).
+Full student instructions live in [`LAB_GUIDE.md`](./LAB_GUIDE.md).  
+Day-of student sheet: [`ONE_PAGER.md`](./ONE_PAGER.md).  
+Challenge cards: [`CHALLENGES.md`](./CHALLENGES.md). Starter kits: [`STARTERS.md`](./STARTERS.md).  
+Facilitator deck / script: [`SLIDES.md`](./SLIDES.md), [`RUN_OF_SHOW.md`](./RUN_OF_SHOW.md).
 
 ---
 
@@ -120,5 +123,9 @@ Score each student/pair 1–4 on:
 |---|---|
 | [`PLAN.md`](./PLAN.md) (this file) | Facilitators |
 | [`LAB_GUIDE.md`](./LAB_GUIDE.md) | Students |
+| [`ONE_PAGER.md`](./ONE_PAGER.md) | Students (print / keep open) |
 | [`CHALLENGES.md`](./CHALLENGES.md) | Students (Module 5+) |
+| [`STARTERS.md`](./STARTERS.md) | Students (Module 5 kickoff) |
+| [`SLIDES.md`](./SLIDES.md) | Facilitators (Marp deck) |
+| [`RUN_OF_SHOW.md`](./RUN_OF_SHOW.md) | Facilitators (minute-by-minute) |
 | [`FACILITATOR_NOTES.md`](./FACILITATOR_NOTES.md) | Facilitators (timing, pitfalls, answer keys at high level) |

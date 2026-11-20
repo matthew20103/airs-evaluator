@@ -11,6 +11,9 @@
 
 This guide is written so you can complete the lab with an AI coding assistant (Cursor, Claude Code, Copilot, etc.). **You** remain accountable for security decisions and for verifying what the model produces.
 
+**Day-of sheet:** keep [`ONE_PAGER.md`](./ONE_PAGER.md) open.  
+**Module 5 kits:** [`CHALLENGES.md`](./CHALLENGES.md) + [`STARTERS.md`](./STARTERS.md).
+
 ---
 
 ## How to use your AI assistant in this lab
